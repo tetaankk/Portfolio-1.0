@@ -1,0 +1,80 @@
+.projects {
+    max-height: 700px;
+    //background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .projectContainer{
+        display: flex;
+        max-height: 300px;
+        width: 95%;
+        margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        border-left: 1px solid orange;
+        transition: all 0.35s ease;
+
+        &:hover{
+            margin-left:10px;
+            transition: all 0.35s ease;
+            background-color: orange;
+            color: black;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+
+        .projectContainerLeft{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                padding: 5px;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+
+        .projectContainerRight{
+            padding: 10px;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                text-align: center;
+            }
+
+            p{
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            .tagContainer{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                .tag {
+                    margin: 0 5px;
+                    display: inline-block;
+                    border: 1px solid white;
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 3px;
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    //flex-direction: column;
+    max-height: 250px;
+    //border-bottom: 2px solid white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+    .navbar-header {
+        position: relative;
+        display: flex;
+        top: 20px;
+        font-size: 60px;
+        font-weight: 200;
+        align-items: center;
+        justify-content: flex-start;
+        color: whitesmoke;
+        //flex: 4;
+        flex: 1;
+        
+        .navbar-header-letter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 0;
+            transition: all 0.6s ease;
+            
+            &:hover{
+                transition: all 0.1s ease;
+                transform:translateY(-1px);
+                color: orange;
+                cursor: crosshair;
+            }
+        }
+        
+    }
+    
+    .navbar-items {
+        flex: 1;
+        display: flex;
+        //background-color: gray;
+        justify-content: flex-end;
+        margin: 0 auto;
+
+        ul{
+            top: 50%;
+            list-style: none;
+            height: 0;
+            position: relative;
+            //width: 90%;
+            background-color: blue;
+            //display: flex;
+            //justify-content: center;
+
+            li{
+                display: inline-block;
+                text-align: center;
+
+  /*               &:first-child {
+                    margin-right: auto;
+                    //margin-left: 1em;
+                    color: black;
+                } */
+
+                a {
+                    display:inline-block;
+                    height: 0;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: whitesmoke; //#e4a40b;
+                    background-color: purple;
+                    //position: relative;
+                    margin: 10px;
+                    transform: translateY(0px);
+             
+                    .first-word {
+                        display: inline-block;
+                        transition: all 0.15s ease;
+                    }
+
+                    .second-word {
+                        display:inline-block;
+                        transition: all 0.15s ease;
+                    }
+   
+                    &:hover {
+
+                        .first-word{
+                            transition: all 0.15s ease;
+                            transform:translateY(2px);
+                            color:#e4a40b;
+                        }
+
+                        .second-word{
+                            transition: all 0.15s ease;
+                            transform:translateY(-2px);
+                            color:#e4a40b;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }

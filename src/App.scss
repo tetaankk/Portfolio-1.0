@@ -1,0 +1,16 @@
+@import "./global.scss";
+
+.App {
+    font-family: 'Poppins', sans-serif;
+    //background-color: green;
+    max-width: $screen-xl-min;
+    margin: 0 auto;   
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+    .sections{
+        //position: relative;
+        top: 1vw;
+    }
+}
