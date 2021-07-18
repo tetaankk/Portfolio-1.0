@@ -1,67 +1,109 @@
+@import "../../global.scss";
+
 .intro {
-    //background-color: white;
-    max-height: 700px;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    margin-top: 60px;
     color: whitesmoke;
     align-items: top;
+    min-height: 60vh;
 
-    .introText{
-        font-size: 30px;
+    h3{
+        font-size: calc(10px + 1vw);
+        letter-spacing: 2px;
         font-weight: 200;
-        margin: 30px;
-        padding-top: 10px;
-        padding: 10px;
-        border-left: 1px solid orange;
-        transition: all 0.35s ease;
+        text-align: center;
+        height: fit-content;
+        margin: 2vw 0;
+    }
 
-        &:hover{
-            margin-left: 10px;
-            border-top-right-radius: 100px;
-            border-bottom-right-radius: 100px;
-            transition: all 0.35s ease;
-            background-color: orange;
-            color: #243b55;
+    .introBoxContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2vw 0;
 
-            &::first-letter{
-                color: #243b55;
+        .introBox{
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #16304d;
+            height: 250px;
+            width: 280px;
+            border-radius: 5px;
+            padding: 5px;
+            transition: transform 0.3s ease;
+            color: whitesmoke;
+            font-size: calc(9px + 1vw);
+
+            &:hover{
+                transform: translateY(-7px) scale(1.05);
+                transition: transform 0.3s ease;
+                font-size: 0;
+
+                &:after{
+                    transition-delay: 1s;
+                    content: attr(data-hover);
+                    font-size: calc(11px + 0.4vw);
+                    text-align: center;
+                    color: orange;
+                }
+
+                .skillBox{
+                    fill: orange;
+                }
+
+                a{
+                    font-size: calc(9px + 1vw);
+                    color: orange;
+                    text-decoration: underline;
+                }
+            }
+            
+            .skillBox {
+                fill: transparent;
+                display: flex;
+                flex-direction: column;
             }
 
             a{
-                //color: #243b55;
-                color: black;
-                text-decoration: underline;
-                transition: all 1s ease;
-
-                &:hover{
-                    color: white;
-                    transition: all 0.5s ease;
-                }
-            }
-        }
-
-        &::first-letter{
-            color: orange;
-            float: left;
-            line-height: 60px;
-            font-size: 180px;
-            padding-top: 40px;
-            padding-right: 10px;
-        }
-
-        a{
-            text-decoration: none;
-            color: goldenrod;
-            transition: all 0.5s ease;
-
-            &:hover{
-                text-decoration: underline;
-                transition: all 0.5s ease;
-                text-transform: underline;
+                color: inherit;
+                text-decoration: none;
             }
         }
     }
+}
 
-
+@media (min-width: $screen-l-min) {
+    .introText{
+            &:hover{
+                margin-left: 10px;
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+                transition: all 0.35s ease;
+                background-color: orange;
+                color: #243b55;
+    
+                &::first-letter{
+                    color: #243b55;
+                    //font-size: inherit;
+                }
+    
+                a{
+                    //color: #243b55;
+                    color: black;
+                    text-decoration: underline;
+                    transition: all 1s ease;
+    
+                    &:hover{
+                        color: white;
+                        transition: all 0.5s ease;
+                    }
+                }
+        }
+    }
 }

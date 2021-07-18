@@ -1,0 +1,14 @@
+.footer{
+    font-size: calc(10px + 0.1vw);
+    color: silver;
+    background-color: #16304d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 3vh;
+    bottom: 0;
+    margin-top: 50px;
+    //margin-bottom: 1px;
+}

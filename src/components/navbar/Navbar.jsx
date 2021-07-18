@@ -1,65 +1,51 @@
 import React from "react";
 import "./navbar.scss";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-scroll";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 export default function Navbar() {
-  return (
-    <div className="navbar">
-      <div className="navbar-header">
-        <span className="navbar-header-letter">t</span>
-        <span className="navbar-header-letter">a</span>
-        <span className="navbar-header-letter">n</span>
-        <span className="navbar-header-letter">k</span>
-        <span className="navbar-header-letter">k</span>
-        <span className="navbar-header-letter">u</span>
-        <span className="navbar-header-letter">r</span>
-        <span className="navbar-header-letter">i</span>
-      </div>
+  const scrollToTop = function () {
+    var Scroll = require("react-scroll");
+    var scroll = Scroll.animateScroll;
+    scroll.scrollToTop({ duration: 500, smooth: true });
+  };
 
+  return (
+    <div className="navbar" id="navbar">
+      <div className="navbar-header-logo">TA</div>
       <div className="navbar-items">
         <ul>
           <li>
-            <Link to="/">
-              <span className="first-word">H</span>
-              <span className="second-word">o</span>
-              <span className="first-word">m</span>
-              <span className="second-word">e</span>
+            <Link to="" smooth={true} duration={500} onClick={scrollToTop}>
+              <span className="first-word">Ho</span>
+              <span className="second-word">me</span>
             </Link>
           </li>
           <li>
-            <Link to="/projects">
-              <span className="first-word">P</span>
-              <span className="second-word">r</span>
-              <span className="first-word">o</span>
-              <span className="second-word">j</span>
-              <span className="first-word">e</span>
-              <span className="second-word">c</span>
-              <span className="first-word">t</span>
-              <span className="second-word">s</span>
+            <Link to="projects" smooth={true} duration={500}>
+              <span className="first-word">Pro</span>
+              <span className="second-word">jects</span>
             </Link>
           </li>
           <li>
-            <Link to="#">
-              <span className="first-word">A</span>
-              <span className="second-word">b</span>
-              <span className="first-word">o</span>
-              <span className="second-word">u</span>
-              <span className="first-word">t</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
-              <span className="first-word">C</span>
-              <span className="second-word">o</span>
-              <span className="first-word">n</span>
-              <span className="second-word">t</span>
-              <span className="first-word">a</span>
-              <span className="second-word">c</span>
-              <span className="first-word">t</span>
-              <span className="second-word">s</span>
+            <Link to="contacts" smooth={true} duration={500}>
+              <span className="first-word">Con</span>
+              <span className="second-word">tact</span>
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="contactIcons">
+        <a
+          href="https://www.linkedin.com/in/tero-ankkuri-751896145/"
+          target="_blank" rel="noreferrer"
+        >
+          <LinkedInIcon />
+        </a>
+        <a href="https://github.com/tetaankk" target="_blank" rel="noreferrer">
+          <GitHubIcon />
+        </a>
       </div>
     </div>
   );

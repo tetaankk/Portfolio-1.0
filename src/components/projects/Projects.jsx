@@ -11,7 +11,8 @@ export default function Projects() {
   });
 
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
+      <h3>Take a glance at my projects!</h3>
       {projectList.map((project) => (
         <div className="projectContainer">
           <div className="projectContainerLeft">
@@ -29,6 +30,7 @@ export default function Projects() {
               <a
                 href={project.liveLink}
                 className="tag"
+                target="_blank"
                 style={{
                   "background-color": "green",
                   "padding-left": "15px",
@@ -36,17 +38,18 @@ export default function Projects() {
                   "margin-right": "35px",
                   "text-decoration": "none",
                   color: "white",
-                  border: "1px dashed orange",
-                }}
+                  border: "none",
+                }} rel="noreferrer"
               >
                 LIVE VERSION
               </a>
               <a
                 href={project.gitHubLink}
                 className="tag"
-                style={{ border: "1px solid #243b55" }}
+                style={{ border: "none" }}
+                target="_blank" rel="noreferrer"
               >
-                <GitHubIcon style={{ fontSize: "30", color: "orange" }} />
+                <GitHubIcon style={{ fontSize: "25", color: "orange" }} />
               </a>
             </div>
           </div>
