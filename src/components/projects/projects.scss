@@ -108,12 +108,15 @@
     .projects{
         .projectContainer{
             &:hover{
-                margin-left:10px;
+                //margin-left:10px;
+                transform: translateY(-10px) scale(1.02);
                 transition: all 0.35s ease;
                 background-color: orange;
                 color: black;
-                border-top-right-radius: 100px;
-                border-bottom-right-radius: 100px;
+                //border-top-right-radius: 50px;
+                //border-top-left-radius: 50px;
+                //border-bottom-right-radius: 50px;
+                //border-bottom-left-radius: 50px;
             }
         }
     }

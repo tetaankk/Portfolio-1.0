@@ -39,7 +39,8 @@ export default function Projects() {
                   "text-decoration": "none",
                   color: "white",
                   border: "none",
-                }} rel="noreferrer"
+                }}
+                rel="noreferrer"
               >
                 LIVE VERSION
               </a>
@@ -47,9 +48,15 @@ export default function Projects() {
                 href={project.gitHubLink}
                 className="tag"
                 style={{ border: "none" }}
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
-                <GitHubIcon style={{ fontSize: "25", color: "orange" }} />
+                <GitHubIcon
+                  style={{
+                    fontSize: "25",
+                    color: "green",
+                  }}
+                />
               </a>
             </div>
           </div>
