@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="projects">
-      <h3>Take a glance at my projects!</h3>
+      <h3>Projects</h3>
       {projectList.map((project) => (
         <div className="projectContainer">
           <div className="projectContainerLeft">

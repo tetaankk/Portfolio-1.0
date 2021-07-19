@@ -24,8 +24,8 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="projects" smooth={true} duration={500}>
-              <span className="first-word">Pro</span>
-              <span className="second-word">jects</span>
+              <span className="first-word">Proj</span>
+              <span className="second-word">ects</span>
             </Link>
           </li>
           <li>
@@ -34,18 +34,28 @@ export default function Navbar() {
               <span className="second-word">tact</span>
             </Link>
           </li>
+
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tero-ankkuri-751896145/"
+              target="_blank"
+              rel="noreferrer"
+              className="contactIcon"
+            >
+              <LinkedInIcon />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/tetaankk"
+              target="_blank"
+              rel="noreferrer"
+              className="contactIcon"
+            >
+              <GitHubIcon />
+            </a>
+          </li>
         </ul>
-      </div>
-      <div className="contactIcons">
-        <a
-          href="https://www.linkedin.com/in/tero-ankkuri-751896145/"
-          target="_blank" rel="noreferrer"
-        >
-          <LinkedInIcon />
-        </a>
-        <a href="https://github.com/tetaankk" target="_blank" rel="noreferrer">
-          <GitHubIcon />
-        </a>
       </div>
     </div>
   );
