@@ -58,6 +58,24 @@
                 justify-content: center;
                 align-items: center;
 
+                .liveTag{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin-right: 35px;
+                    text-decoration: none;
+                    transition: all 0.15s ease;
+                    color: green;
+
+                    &:hover{
+                        transform: translateY(-2px);
+                        transition: all 0.15s ease;
+                    }
+                }
+
+                .liveTag2{
+                    border: 1px solid white;
+                }
+
                 .tag {
                     font-size: calc(10px + 0.2vw);
                     margin: 0 5px;
@@ -107,16 +125,25 @@
 @media (min-width: $screen-l-min) {
     .projects{
         .projectContainer{
+            filter: blur(2px);
             &:hover{
-                //margin-left:10px;
+                filter: blur(0);
                 transform: translateY(-10px) scale(1.02);
                 transition: all 0.35s ease;
                 background-color: orange;
                 color: black;
-                //border-top-right-radius: 50px;
-                //border-top-left-radius: 50px;
-                //border-bottom-right-radius: 50px;
-                //border-bottom-left-radius: 50px;
+
+                .projectContainerRight .tagContainer .liveTag {
+                    background-color: transparent;
+                    border: none;
+                    transform: scale(1.1);
+                }
+
+                .projectContainerRight .tagContainer .liveTag2{
+                    background-color: green;
+                    color: white;
+                }
+
             }
         }
     }

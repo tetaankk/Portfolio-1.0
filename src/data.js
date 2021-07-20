@@ -1,6 +1,7 @@
 export const projects = [
   {
     title: "Nutrition diary",
+    id: 1,
     img: "https://cdn.mos.cms.futurecdn.net/ZvueiLL2vdwoHWHjCRuQCW-1200-80.jpg",
     tags: ["ReactJS", "NodeJS", "MongoDB", "Express"],
     liveLink: "www.google.fi",
@@ -10,6 +11,7 @@ export const projects = [
   },
   {
     title: "Nutrition diary",
+    id: 2,
     img: "https://cdn.mos.cms.futurecdn.net/ZvueiLL2vdwoHWHjCRuQCW-1200-80.jpg",
     tags: ["ReactJS", "NodeJS", "MongoDB", "Express"],
     liveLink: "www.google.fi",
@@ -19,6 +21,7 @@ export const projects = [
   },
   {
     title: "Nutrition diary",
+    id: 3,
     img: "https://cdn.mos.cms.futurecdn.net/ZvueiLL2vdwoHWHjCRuQCW-1200-80.jpg",
     tags: ["ReactJS", "NodeJS", "MongoDB", "Express"],
     liveLink: "www.google.fi",

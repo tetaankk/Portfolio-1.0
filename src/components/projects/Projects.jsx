@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./projects.scss";
+import "../../common.scss";
 import { projects } from "../../data";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
@@ -8,55 +9,42 @@ export default function Projects() {
 
   useEffect(() => {
     setProjectList(projects);
-  });
+  }, []);
 
   return (
     <div id="projects" className="projects">
       <h3>Projects</h3>
       {projectList.map((project) => (
-        <div className="projectContainer">
+        <div className="projectContainer" key={project.id}>
           <div className="projectContainerLeft">
-            <img src={project.img} />
+            <img src={project.img} alt="Project screenshot" />
           </div>
           <div className="projectContainerRight">
             <h2>{project.title}</h2>
             <div className="tagContainer">
               {project.tags.map((tag) => (
-                <p className="tag">{tag}</p>
+                <p className="tag" key={tag}>
+                  {tag}
+                </p>
               ))}
             </div>
             <p>{project.description}</p>
             <div className="tagContainer">
               <a
                 href={project.liveLink}
-                className="tag"
+                className="liveTag liveTag2"
                 target="_blank"
-                style={{
-                  "background-color": "green",
-                  "padding-left": "15px",
-                  "padding-right": "15px",
-                  "margin-right": "35px",
-                  "text-decoration": "none",
-                  color: "white",
-                  border: "none",
-                }}
                 rel="noreferrer"
               >
                 LIVE VERSION
               </a>
               <a
                 href={project.gitHubLink}
-                className="tag"
-                style={{ border: "none" }}
+                className="liveTag"
                 target="_blank"
                 rel="noreferrer"
               >
-                <GitHubIcon
-                  style={{
-                    fontSize: "25",
-                    color: "green",
-                  }}
-                />
+                <GitHubIcon />
               </a>
             </div>
           </div>
