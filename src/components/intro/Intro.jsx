@@ -38,6 +38,7 @@ export default function Intro() {
             <DevIcon icon="javascript" className="skillBox" />
             <DevIcon icon="nodejs" className="skillBox" />
             <DevIcon icon="mongodb" className="skillBox" />
+            SQL
             <DevIcon icon="sass" className="skillBox" />
             <DevIcon icon="html5" className="skillBox" />
             <DevIcon icon="git" className="skillBox" />
@@ -47,18 +48,20 @@ export default function Intro() {
         <div className="introBox">
           <div className="frontBox">Looking for</div>
           <div className="bottomBox">
-            A position in which I could utilize my skills and foster my
-            enthusiasm. I am by no means complete, but even more so, I'm eager
-            and motivated to learn and grow.
+            Mainly for a web or front-end developer position, be it intern,
+            junior or associate, as that is where my latest experience stresses
+            on. However, I am open to other opportunities as well.
           </div>
           <div className="bg-blur box-5"></div>
         </div>
         <div className="introBox">
-          <div className="frontBox">Looking for</div>
+          <div className="frontBox">Hoping for</div>
           <div className="bottomBox">
-            A position in which I could utilize my skills and foster my
-            enthusiasm. I am by no means complete, but even more so, I'm eager
-            and motivated to learn and grow.
+            <p>
+              A position in which I could utilize my skills and foster my
+              enthusiasm. I am by no means complete, but even more so, I'm eager
+              and motivated to learn and grow.
+            </p>
           </div>
           <div className="bg-blur box-6"></div>
         </div>
