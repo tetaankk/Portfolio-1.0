@@ -81,8 +81,11 @@
                   font-weight: 300;
                   display: none;
 
+ 
+
                   .skillBox {
                     fill: transparent;
+
                 }
             }
 
@@ -108,8 +111,22 @@
                     justify-content: center;
                     text-align: center;
 
+                    .skillContainer{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        p{
+                            font-size: 2em;
+                            margin: 0.5em;
+                        }
+                    }
+
                     .skillBox{
                         fill: orange;
+                        width: 4em;
+                        //height: auto;
                     }
 
                     a{

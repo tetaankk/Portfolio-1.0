@@ -25,7 +25,7 @@ export default function Intro() {
         <div className="introBox">
           <div className="frontBox">Resume</div>
           <div className="bottomBox">
-            <a href="../../CV.pdf">
+            <a href="../../CV.pdf" target="_blank">
               <GetAppIcon className="downloadIcon" />
             </a>
           </div>
@@ -34,14 +34,16 @@ export default function Intro() {
         <div className="introBox">
           <div className="frontBox">Skills</div>
           <div className="bottomBox">
-            <DevIcon icon="react" className="skillBox" />
-            <DevIcon icon="javascript" className="skillBox" />
-            <DevIcon icon="nodejs" className="skillBox" />
-            <DevIcon icon="mongodb" className="skillBox" />
-            SQL
-            <DevIcon icon="sass" className="skillBox" />
-            <DevIcon icon="html5" className="skillBox" />
-            <DevIcon icon="git" className="skillBox" />
+            <div className="skillContainer">
+              <DevIcon icon="react" className="skillBox" />
+              <DevIcon icon="javascript" className="skillBox" />
+              <DevIcon icon="nodejs" className="skillBox" />
+              <DevIcon icon="mongodb" className="skillBox" />
+              <p>SQL</p>
+              <DevIcon icon="sass" className="skillBox" />
+              <DevIcon icon="html5" className="skillBox" />
+              <DevIcon icon="git" className="skillBox" />
+            </div>
           </div>
           <div className="bg-blur box-4"></div>
         </div>
