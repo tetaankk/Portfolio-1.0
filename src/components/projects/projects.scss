@@ -141,7 +141,12 @@
 
                 .projectContainerRight .tagContainer .liveTag2{
                     background-color: green;
+                    border: 1px dashed red;
                     color: white;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
 
             }

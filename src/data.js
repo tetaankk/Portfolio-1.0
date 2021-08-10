@@ -1,32 +1,25 @@
+import Rulebook from "./images/Rulebook.jpg";
+import Macrolator from "./images/Macrolator.png";
+
 export const projects = [
   {
-    title: "Nutrition diary",
+    title: "Rulebook for Magic: The Gathering",
     id: 1,
-    img: "https://cdn.mos.cms.futurecdn.net/ZvueiLL2vdwoHWHjCRuQCW-1200-80.jpg",
-    tags: ["ReactJS", "NodeJS", "MongoDB", "Express"],
-    liveLink: "www.google.fi",
-    gitHubLink: "http://www.google.fi",
+    img: Rulebook,
+    tags: ["React/JavaScript", "NodeJS", "Express"],
+    liveLink: "https://magicrulebook.herokuapp.com/",
+    gitHubLink: "https://github.com/tetaankk/MTG-Rulebook",
     description:
-      "A tool that lets user to keep track of their consumed foods and macro nutrients. It utilizes, inter alia, a Fineli API and user authentication. The service can be tried out with a test user, thus registration is not mandatory.",
+      "Interactive tool built for browsing and searching rules for the card game Magic: The Gathering. NodeJS back-end fetches and parses a raw text file after which a ReactJS front-end presents the rules in a practical manner and allows the user to search for rules with keywords.",
   },
   {
-    title: "Nutrition diary",
+    title: "Macrolator",
     id: 2,
-    img: "https://cdn.mos.cms.futurecdn.net/ZvueiLL2vdwoHWHjCRuQCW-1200-80.jpg",
-    tags: ["ReactJS", "NodeJS", "MongoDB", "Express"],
-    liveLink: "www.google.fi",
-    gitHubLink: "http://www.google.fi",
+    img: Macrolator,
+    tags: ["React/JavaScript", "NodeJS", "MongoDB", "Express"],
+    liveLink: "https://macrolator.herokuapp.com/",
+    gitHubLink: "https://github.com/tetaankk/Macrolator-2",
     description:
-      "A tool that lets user to keep track of their consumed foods and macro nutrients. It utilizes, inter alia, a Fineli API and user authentication. The service can be tried out with a test user, thus registration is not required.",
-  },
-  {
-    title: "Nutrition diary",
-    id: 3,
-    img: "https://cdn.mos.cms.futurecdn.net/ZvueiLL2vdwoHWHjCRuQCW-1200-80.jpg",
-    tags: ["ReactJS", "NodeJS", "MongoDB", "Express"],
-    liveLink: "www.google.fi",
-    gitHubLink: "http://www.google.fi",
-    description:
-      "A tool that lets user to keep track of their consumed foods and macro nutrients. It utilizes, inter alia, a Fineli API and user authentication. The service can be tried out with a test user, thus registration is not required.",
+      "A simple tool that lets user to keep track of their consumed foods and macro nutrients. It utilizes, inter alia, a Fineli API and user authentication. The service can be tried out with a test user, thus registration is not mandatory. More features to come!",
   },
 ];
