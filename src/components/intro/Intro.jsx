@@ -38,11 +38,11 @@ export default function Intro() {
               <DevIcon icon="react" className="skillBox" />
               <DevIcon icon="javascript" className="skillBox" />
               <DevIcon icon="nodejs" className="skillBox" />
+              <DevIcon icon="mysql" className="skillBox" />
               <DevIcon icon="mongodb" className="skillBox" />
-              <p>SQL</p>
               <DevIcon icon="sass" className="skillBox" />
               <DevIcon icon="html5" className="skillBox" />
-              <DevIcon icon="git" className="skillBox" />
+              <DevIcon icon="git" className="skillBox" data-hover="Git" />
             </div>
           </div>
           <div className="bg-blur box-4"></div>
@@ -52,7 +52,7 @@ export default function Intro() {
           <div className="bottomBox">
             Mainly for a web or front-end developer position, be it intern,
             junior or associate, as that is where my latest experience stresses
-            on. However, I am open to other opportunities as well.
+            on. However, I am open to other opportunities as well!
           </div>
           <div className="bg-blur box-5"></div>
         </div>
@@ -62,7 +62,7 @@ export default function Intro() {
             <p>
               A position in which I could utilize my skills and foster my
               enthusiasm. I am by no means complete, but even more so, I'm eager
-              and motivated to learn and grow.
+              and motivated to learn and grow!
             </p>
           </div>
           <div className="bg-blur box-6"></div>

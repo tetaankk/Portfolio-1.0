@@ -114,19 +114,18 @@
                     .skillContainer{
                         display: flex;
                         flex-wrap: wrap;
-                        justify-content: center;
+                        justify-content: space-evenly;
                         align-items: center;
 
                         p{
                             font-size: 2em;
                             margin: 0.5em;
                         }
-                    }
 
-                    .skillBox{
-                        fill: orange;
-                        width: 4em;
-                        //height: auto;
+                        .skillBox{
+                            fill: orange;
+                            width: 4em;
+                        }
                     }
 
                     a{
@@ -135,11 +134,14 @@
                         
                         .downloadIcon{
                             font-size: calc(40px + 0.5vw);
-                            transition: all 0.3s ease;
+                            transition: all 0.4s ease;
+                            border: 1px solid orange;
+                            border-radius: 100%;
 
                             &:hover{
-                                transform: scale(1.1);
-                                transition: all 0.3s ease;
+                                transform: scale(1.5);
+                                border: 1px dashed orange;
+                                transition: all 0.15s ease;
                             }
                         }
                     }
@@ -183,11 +185,6 @@
                 background-position: bottom center;
                 background-size: cover;
             }
-
         }
     }
-}
-
-@media (min-width: $screen-l-min) {
-
 }
