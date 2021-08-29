@@ -50,9 +50,8 @@ export default function Intro() {
         <div className="introBox">
           <div className="frontBox">Looking for</div>
           <div className="bottomBox">
-            Mainly for a web or front-end developer position, be it intern,
-            junior or associate, as that is where my latest experience stresses
-            on. However, I am open to other opportunities as well!
+            A web or front-end developer position, be it junior or associate. I
+            am also interested in other opportunities, such as data engineering.
           </div>
           <div className="bg-blur box-5"></div>
         </div>

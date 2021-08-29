@@ -142,6 +142,8 @@
                                 transform: scale(1.5);
                                 border: 1px dashed orange;
                                 transition: all 0.15s ease;
+                                -webkit-animation: spin 2s linear infinite;
+                                animation: spin 2s linear infinite;
                             }
                         }
                     }
